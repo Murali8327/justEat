@@ -9,7 +9,11 @@ const app = express();
 // Middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://food-finder-frontend.onrender.com', 'https://food-finder-frontend-vwz8.onrender.com']
+    ? [
+        'https://food-finder-frontend.onrender.com',
+        'https://food-finder-frontend-vwz8.onrender.com',
+        'https://food-finder-frontend-pkxe.onrender.com'
+      ]
     : 'http://localhost:3000',
   credentials: true
 }));
